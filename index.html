@@ -1,53 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <div class="portfolio">
-        <div class="navbar">
-            <div class="logo">
-                <i class="fa-brands fa-drupal"></i>
+    <header>
+        <nav>
+            <div class="portfolio-title">My Portfolio</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home-section">
+        <div class="home-container">
+            <div class="home-text">
+                <!-- <h1>Hi, I'm <span class="highlight-name">Nayana D U</span></h1> -->
+                <h1 class="typing-text"> HI,  I'm Nayana D U</h1>
+
+                <p>Aspiring to become a Software Engineer.</p>
+                <!-- <p>I am a passionate web developer, skilled in Python full-stack development, committed to solving complex problems through innovative technology.</p> <br><br> -->
+                <!-- <a href="Nayana_DCL (1).pdf" class="btn" download>Download Resume</a> -->
             </div>
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">contact</a>
-            <a href="">service</a>
-            <a href="">experience</a>
-            <button>contact me</button>
+            <div class="home-image">
+                <img src="profile.jpeg" alt="My Photo" class="profile-img">
+            </div>
         </div>
+    </section>
 
-        <div class="content">
-            <div class="right">
-                <h3>hi...</h3>
-                <h1>i'm <span>vivek s</span></h1>
-                <h2>a frontend developer</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, aliquam delectus incidunt maiores
-                    temporibus repellendus, voluptatibus itaque expedita pariatur error sint accusantium nobis quisquam
-                    tempore ipsum sit nesciunt aut fugit maxime, in facilis! Numquam dolore qui libero ratione tempore.
-                    Magnam.</p>
-                <div class="button">
-                    <button id="b1">hire me</button>
-                    <button>experience</button>
-                </div>
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+              <img src="image.png" alt="Python">
+              <h3>Python</h3>
+              <p>Backend development using Django, REST APIs, and automation.</p>
             </div>
-            <div class="left">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z2VudGxlbWFufGVufDB8fDB8fHww"
-                    alt="..">
+            
+            <!-- <div class="skill-card">
+              <img src="" alt="SQL">
+              <h3>SQL & Database</h3>
+              <p>Database management with MySQL, PostgreSQL, and optimization.</p>
+            </div> -->
+            
+            <div class="skill-card">
+              <img src="" alt="React">
+              <h3>React.js & JS</h3>
+              <p>Building modern front-end apps with interactive UI.</p>
             </div>
+            
+            <div class="skill-card">
+              <img src="" alt="Node.js">
+              <h3>Node.js</h3>
+              <p>Server-side development with Express, API integration, and backend logic.</p>
+            </div>
+            
+            <div class="skill-card">
+              <img src="" alt="HTML & CSS">
+              <h3>HTML & CSS</h3>
+              <p>Responsive and clean UI component design.</p>
+            </div>
+            
+            <div class="skill-card">
+              <img src="" alt="Git">
+              <h3>Git & GitHub</h3>
+              <p>Version control & collaboration.</p>
+            </div>
+          </div>  
+    </section>
 
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container">
+            <ul>
+                <li><strong>Python Full Stack</strong> - Qspiders (Feb 2024 - Oct 2024)</li>
+                <li><strong>B.E. in Computer Science</strong> - Govt. Eng College, Ramanagaram (2021 - 2024)</li>
+                <li><strong>Diploma in Computer Science</strong> - Govt Polytechnic, Nagamangala (2018 - 2020)</li>
+                <li><strong>SSLC</strong> - SVHS, Bangalore (2015 - 2016)</li>
+            </ul>
         </div>
+    </section>
 
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Portfolio Website</h3>
+                <p>Developed a fully responsive portfolio using HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-box">
+                <h3>Smart Water Regulation</h3>
+                <p>Designed smart solution using html,css ,JavaScript & IoT for water management.</p>
+            </div>
+            <div class="project-box">
+                <h3>Skin Cancer Detection</h3>
+                <p>Implemented CNN deep learning model for skin cancer prediction.</p>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-box email">
+                <a href="mailto:nayananayana671@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+            </div>
+            <div class="contact-box linkedin">
+                <a href="https://www.linkedin.com/in/nayana" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <div class="contact-box github">
+                <a href="https://github.com/Nayana-15" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+     </section>
+    
+  
 </body>
-
 </html>
